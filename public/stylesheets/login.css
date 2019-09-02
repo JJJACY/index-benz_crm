@@ -1,0 +1,78 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.page-header{
+	background: #222;
+}
+.page-header-nav{
+	width: 940px;
+	height: 108px;
+	margin: 0 auto;
+}
+.page-header-link{
+	display: inline-block;
+	margin-top: 22px;
+	width: 259px;
+	height: 64px;
+}
+.page-header-logo{
+	width: 259px;
+	height: 64px; 
+}
+.page-body{
+	height: 770px;
+	padding-top: 120px;
+	background: url(https://www.mercedes-benz.com.cn/content/dam/mb-cn/vehicles/amg/amg-e-63-s-4matic_cy18_2/PC_banner28801200.jpg) no-repeat bottom;
+}
+.body-form{
+	width: 590px;
+	height: 500px;
+	margin: 0 auto;
+	padding: 80px;
+	background-color: rgba(255,255,255,0.7);
+}
+.body-form-title{
+	text-align: center;
+	font-size: 36px;
+	font-weight: 400;
+	color: #000;
+}
+.name-input{
+	display: inline-block;
+	width: 400px;
+	height: 60px;
+	margin-top: 50px;
+	padding-left: 10px;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	font-size: 14px;
+}
+.tel-input{
+	display: inline-block;
+	width: 400px;
+	height: 60px;
+	margin-top: 30px;
+	padding-left: 10px;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	font-size: 14px;
+}
+.click-btn{
+	display: inline-block;
+	width: 400px;
+	height: 40px;
+	margin-top: 20px;
+	background-color: #000;
+	color: #fff;
+	border: none;
+}
+.page-footer{
+	height: 60px;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+	background-color: #000;
+	line-height: 60px;
+}
