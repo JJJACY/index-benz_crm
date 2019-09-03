@@ -25,10 +25,7 @@ router.get('/admin/user/:id/edit', authMiddleware.mustLogin , userController.edi
 
 router.get('/admin/clue', clueController.show);
 
-router.get('/admin/clue/:id', authMiddleware.mustLogin, function(req, res, next) {
-  res.render('admin/clue_log');
-});
-
+router.get('/admin/clue/:id', authMiddleware.mustLogin, clueController.log);
 
 /*退出时的渲染页面*/
 router.get('/api/logout',function(req, res ,next){

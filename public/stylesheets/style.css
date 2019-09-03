@@ -83,6 +83,60 @@
   width: 1000px;
   margin: 0 auto;
 }
+/*记录列表样式*/
+.content-mainer{
+  display: flex;
+}
+
+.log-section{
+  flex: 1;
+  margin-left: 60px;
+}
+
+.log-item{
+  margin: 20px 0;
+}
+
+.log-item .log-date{
+  font-size: 16px;
+}
+.log-item .log-content{
+  font-size: 14px;
+  color: #666;
+}
+
+
+/*记录列表样式*/
+.cluelog-mainer{
+  display: flex;
+}
+
+.clue-section{
+  flex: 1;
+  padding:0 20px;
+  background: #f1f1f1;
+  margin-right: 10px;
+}
+
+.log-section{
+  flex: 1;
+  padding:0 20px;
+  background: #f1f1f1;
+}
+
+.log-item{
+  margin: 20px 0;
+}
+
+.log-item .log-date{
+  font-size: 16px;
+}
+.log-item .log-content{
+  font-size: 14px;
+  color: #666;
+}
+
+
 
 /*表单*/
 .form-item{
@@ -137,6 +191,10 @@
 .form-button:hover{
   opacity: .8;
 }
+
+
+
+
 /* 自己写的 */
 *{
 	margin: 0;
