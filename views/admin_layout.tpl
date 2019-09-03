@@ -23,11 +23,12 @@
       <div class="page-aside">
         <nav class="page-nav">
           <ul>
-            {% if userInfo.id == 1 %}
+            {% if userInfo.id == 1 %} 
+            {% endif %}
             <li>
               <a class="page-nav-item {% if nav == 'user' %}active{% endif %}" href="/admin/user">人员管理</a>
             </li>
-            {% endif %}
+           
             <li>
               <a class="page-nav-item {% if nav == 'clue' %}active{% endif %}" href="/admin/clue">线索管理</a>
             </li>

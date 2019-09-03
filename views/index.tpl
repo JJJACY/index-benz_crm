@@ -21,9 +21,9 @@
 			<div class="page-body-content">
 				<div class="page-body-content-form">
 					<p class="page-body-descript">欢迎在线预约试驾。只需填写姓名及手机号，我们会第一时间与您联系，安排试驾事宜。</p>
-					<input class="name-input" type="text" name="name" placeholder="你的姓名">
-					<input class="tel-input" type="text" name="name" placeholder="你的电话">
-					<button class="click-btn">马上抢占名额</button>
+					<input  id="userName" class="name-input" type="text" name="name" placeholder="你的姓名">
+					<input id="userPhone" class="tel-input" type="text" name="name" placeholder="你的电话">
+					<button id="userSubmit" class="click-btn">马上抢占名额</button>
 				</div>
 			</div>
 		</div>
