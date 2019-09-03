@@ -20,35 +20,12 @@
       <td>{{ val.utm }}</td>
       <td>{{ val.created_time_display }}</td>
       <td>{{ val.sales_name }}</td>
-      {% if val.status == 1 %}
-        <td>没有意向</td>
-      {% elif val.status == 2 %}
-        <td>意向一般</td>
-      {% elif val.status == 3 %}
-        <td>意向强烈</td>
-      {% elif val.status == 4 %}
-        <td>完成销售</td>
-      {% elif val.status == 5 %}
-        <td>取消销售</td>
-      {% else %}
-        <td>-</td>
-      {% endif %}
+      <td>{{val.status}}</td>
       <td><a href="/admin/clue/{{val.id}}">跟踪</a></td>
     </tr>
     {% endfor %}
   </table>
 </div>
 
-{% if pagination.pageArray.length > 1 %}
-<div class="pagination">
-  {% for val in pagination.pageArray  %}
-    <a class="pagination-item {% if val == pagination.current %}active{% endif %}"
-      href="/admin/clue?page={{val}}"
-    >
-      {{val}}
-    </a>
-  {% endfor %}
-</div>
-{% endif %}
 
 {% endblock %}

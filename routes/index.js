@@ -3,6 +3,7 @@ var router = express.Router();
 var userController = require('./../controllers/user.js');
 var authController = require('./../controllers/auth.js');
 var authMiddleware = require('./../middlewares/auth.js');
+var clueController = require('./../controllers/clue.js')
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
@@ -22,11 +23,9 @@ router.get('/admin/user/create', authMiddleware.mustLogin ,userController.render
 router.get('/admin/user/:id/edit', authMiddleware.mustLogin , userController.edit);
 
 
-router.get('/admin/clue', function(req, res, next) {
-  res.render('admin/clue');
-});
+router.get('/admin/clue', clueController.show);
 
-router.get('/admin/clue/:id', function(req, res, next) {
+router.get('/admin/clue/:id', authMiddleware.mustLogin, function(req, res, next) {
   res.render('admin/clue_log');
 });
 
